@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="navbar navyr">
       <div class="container">
         <div class="nav">
           <div class="logo">
@@ -28,6 +28,8 @@
           </div>
           <div class="info-mob">
             <div class="toggle">
+              <span></span>
+              <span></span>
               <span></span>
             </div>
             <div class="info-more">
@@ -119,8 +121,66 @@
               </div>
             </div>
           </div>
-          <div class="side-img">
-            <img src="img/main.jpg" alt="York Engineer" />
+          <div class="side-form">
+            <div class="pop-content">
+              <div class="formbox">
+                <form>
+                  <div class="combin">
+                    <div class="input-box">
+                      <p>First Name*</p>
+                      <input type="text" placeholder="Mohamed" required />
+                    </div>
+                    <div class="input-box">
+                      <p>Last Name*</p>
+                      <input type="text" placeholder="Ali" required />
+                    </div>
+                  </div>
+                  <div class="input-box">
+                    <p>Email*</p>
+                    <input
+                      type="email"
+                      placeholder="mohamed@jci.com"
+                      required
+                    />
+                  </div>
+                  <div class="input-box">
+                    <p>Mobile Number*</p>
+                    <input type="number" placeholder="0123456789" required />
+                  </div>
+                  <div class="combin">
+                    <div class="form-groups">
+                      <p>Region*</p>
+                      <select class="form-control" id="region">
+                        <option selected="selected" disabled="">Region*</option>
+                        <option value="Central Region">Central Region</option>
+                        <option value="Western Region">Western Region</option>
+                        <option value="Eastern Region">Eastern Region</option>
+                      </select>
+                    </div>
+                    <div class="form-groups">
+                      <p>City*</p>
+                      <select class="form-control" id="city">
+                        <option selected="selected" disabled="">City*</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-groups">
+                    <p>Which time to call?</p>
+                    <select class="form-control" id="call">
+                      <option selected="selected" disabled="">
+                        Which time to call?
+                      </option>
+                      <option value="10:00 - 12:00">10:00 - 12:00</option>
+                      <option value="12:00 - 02:00">12:00 - 02:00</option>
+                      <option value="02:00 - 04:00">02:00 - 04:00</option>
+                    </select>
+                  </div>
+                  <div class="input-boxs">
+                    <input type="submit" class="send" value="Send" />
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -355,6 +415,13 @@
 
     <!-- End Projects -->
 
+    <!-- Fixed Request -->
+    <div class="fixed-req">
+      <button class="req">Request Quotation</button>
+    </div>
+
+    <!-- End Fixed Request -->
+
     <!-- Footer -->
     <div class="footer">
       <p>
@@ -365,6 +432,84 @@
 
     <!-- End Footer -->
 
-    <script src="main.js"></script>
+    <script>
+      const navbar = document.querySelector(".navbar");
+      const logo = document.querySelector(".navyr .logo img");
+      const lang = document.querySelector(".navyr .lang a");
+      const req = document.querySelector(".navyr .req");
+      const fixy = document.querySelector(".fixed-req");
+      const togg = document.querySelectorAll(".navbar .toggle span");
+
+      window.onscroll = function () {
+        // pageYOffset or scrollY
+
+        if (window.pageYOffset > 80) {
+          navbar.classList.add("scrolled");
+          logo.setAttribute("src", "img/logo.png");
+          lang.style.color = "#151515";
+          req.style.color = "#fff";
+          req.style.background = "#00539e";
+          fixy.style.display = "block";
+
+          togg.forEach(function (toggy) {
+            toggy.style.background = "#151515";
+          });
+        } else {
+          navbar.classList.remove("scrolled");
+          logo.setAttribute("src", "img/logo.png");
+          lang.style.color = "#151515";
+          req.style.color = "#fff";
+          req.style.background = "#00539e";
+          fixy.style.display = "none";
+          togg.forEach(function (toggy) {
+            toggy.style.background = "#151515";
+          });
+        }
+      };
+
+      const toggy = document.querySelector(".toggle");
+      const more = document.querySelector(".info-more");
+
+      toggy.addEventListener("click", function () {
+        more.classList.toggle("show");
+      });
+
+      const playVideo = document.querySelector(".video");
+      const closeVideo = document.querySelector(".close-video");
+      const watch = document.querySelector(".watch");
+      const videoPlay = document.querySelector(".video-play");
+
+      playVideo.addEventListener("click", function () {
+        watch.classList.add("view");
+        videoPlay.setAttribute(
+          "src",
+          "https://www.youtube.com/embed/lzTgQvOKNBs"
+        );
+      });
+      closeVideo.addEventListener("click", function () {
+        watch.classList.remove("view");
+        videoPlay.setAttribute("src", "");
+      });
+
+      // Show Contact pop - up
+      const pops = document.querySelectorAll(".req");
+      const pop = document.querySelector(".pop-form");
+      const cancel = document.querySelector(".cancel");
+
+      pops.forEach(function (popss) {
+        popss.addEventListener("click", function () {
+          pop.classList.add("view");
+        });
+        cancel.addEventListener("click", function () {
+          pop.classList.remove("view");
+        });
+      });
+
+      // Date Year
+
+      const year = document.querySelector(".year");
+
+      year.innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>

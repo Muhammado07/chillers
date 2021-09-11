@@ -3,6 +3,7 @@ const logo = document.querySelector(".navbar .logo img")
 const lang = document.querySelector('.navbar .lang a')
 const req = document.querySelector('.navbar .req')
 const fixy = document.querySelector('.fixed-req')
+const togg = document.querySelectorAll('.navbar .toggle span')
 
 
 window.onscroll = function () {
@@ -16,6 +17,12 @@ window.onscroll = function () {
         req.style.background = "#00539e"
         fixy.style.display = "block"
 
+        togg.forEach(function (toggy) {
+            toggy.style.background = "#151515"
+        })
+
+
+
     } else {
         navbar.classList.remove("scrolled");
         logo.setAttribute("src", "img/logo-white.png")
@@ -23,6 +30,9 @@ window.onscroll = function () {
         req.style.color = "#151515"
         req.style.background = "#fff"
         fixy.style.display = "none"
+        togg.forEach(function (toggy) {
+            toggy.style.background = "#fff"
+        })
     }
 };
 

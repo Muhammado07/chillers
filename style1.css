@@ -147,6 +147,10 @@ a {
   display: none;
 }
 @media screen and (max-width: 767px) {
+  .nav .logo {
+    width: 170px;
+    height: auto;
+  }
   .navbar .req {
     padding: 15px;
   }
@@ -166,19 +170,11 @@ a {
     display: block;
     position: relative;
   }
-  .navbar .info-mob .toggle span::before,
-  .navbar .info-mob .toggle span::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background: var(--third-color);
+  .navbar .info-mob .toggle span:nth-child(1) {
+    top: 10px;
   }
-  .navbar .info-mob .toggle span::before {
-    top: 8px;
-  }
-  .navbar .info-mob .toggle span::after {
-    top: -8px;
+  .navbar .info-mob .toggle span:nth-child(3) {
+    top: -10px;
   }
 
   .navbar .info-mob .info-more {

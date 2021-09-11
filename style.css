@@ -185,7 +185,7 @@ a {
     background: var(--third-color);
     position: absolute;
     left: -100%;
-    top: 58px;
+    top: 47px;
     padding: 20px 20px;
     z-index: 2;
     transition: all 0.3s ease-in-out;

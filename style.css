@@ -146,6 +146,10 @@ a {
   display: none;
 }
 @media screen and (max-width: 767px) {
+  .nav .logo {
+    width: 170px;
+    height: auto;
+  }
   .navbar .req {
     padding: 15px;
   }

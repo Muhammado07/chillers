@@ -269,6 +269,9 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .chiller {
+    height: auto;
+  }
   .chiller .details {
     grid-template-columns: 1fr;
     grid-row-gap: 30px;

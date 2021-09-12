@@ -319,7 +319,7 @@ a {
     flex-direction: column;
   }
   .chiller .details .side-info .more .video {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 0;
   }
 }

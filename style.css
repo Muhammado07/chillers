@@ -804,3 +804,38 @@ input[type="number"] {
     font-size: 11px;
   }
 }
+
+/* ========================================
+=================== ARABIC ==================
+=========================================== */
+.ar {
+  direction: rtl;
+  font-family: "Tahoma" !important;
+}
+.ar .nav .info {
+  margin-right: auto !important;
+  margin-left: 0;
+}
+.ar .chiller .details .side-info .info h1 {
+  font-size: 45px;
+}
+.ar .chiller .details .side-info .more .video {
+  margin-left: 0;
+  margin-right: 0;
+}
+.ar .chiller .details .side-info .more .video img {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .ar .chiller .details .side-info .info h1 {
+    font-size: 26px;
+  }
+  .ar .features h2 {
+    text-align: right;
+  }
+  .ar .chiller .details .side-info .more {
+    align-items: baseline;
+  }
+}

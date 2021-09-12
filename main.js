@@ -15,7 +15,16 @@ window.onscroll = function () {
         lang.style.color = "#151515"
         req.style.color = "#fff"
         req.style.background = "#00539e"
-        fixy.style.display = "block"
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                fixy.style.display = "block"
+            } else {
+                fixy.style.display = "none"
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 767px)")
+        myFunction(x) // Call listener function at run time
 
         togg.forEach(function (toggy) {
             toggy.style.background = "#151515"

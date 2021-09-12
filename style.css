@@ -412,9 +412,9 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .features {
+  /* .features {
     padding: 50px 0 0;
-  }
+  } */
   .features .boxs {
     grid-template-columns: 1fr;
   }
@@ -431,7 +431,7 @@ a {
 }
 @media screen and (max-width: 480px) {
   .features {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 
@@ -439,7 +439,7 @@ a {
     ======== HISTORY =========
     ============================ */
 .history {
-  padding: 50px 0;
+  padding: 50px 0 0;
   position: relative;
 }
 .history .histy {
@@ -458,7 +458,28 @@ a {
   width: 100%;
   height: 100%;
 }
-
+.history .histy ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+.history .histy ul li {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  grid-gap: 10px;
+  align-items: start;
+  font-size: 16px;
+  line-height: 1.1;
+  position: relative;
+  margin-bottom: 5px;
+}
+.history .histy ul li::before {
+  content: attr(data-icon);
+  font-size: 16px;
+}
 @media screen and (max-width: 767px) {
   .history {
     padding-bottom: 0;

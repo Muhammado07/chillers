@@ -240,7 +240,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 90px;
   z-index: 1;
 }
 .chiller .details .side-info {

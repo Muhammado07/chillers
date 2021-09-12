@@ -224,7 +224,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 150px;
 }
 .chiller .details .side-info {
   display: flex;

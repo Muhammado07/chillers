@@ -287,6 +287,9 @@ a {
   .chiller .req {
     padding: 15px 25px;
   }
+  .req {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 480px) {
   .chiller .details .side-info .info h1 {
@@ -295,12 +298,14 @@ a {
   .chiller .details .side-info .info p {
     font-size: 22px;
   }
-  .chiller .details .side-info .more {
-    flex-direction: column;
+  .chiller .req {
+    padding: 15px 20px;
+  }
+  .req {
+    font-size: 14px;
   }
   .chiller .details .side-info .more .video {
-    margin-top: 20px;
-    margin-left: 0;
+    margin-left: 15px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -309,6 +314,14 @@ a {
   }
   .chiller .details .side-info .info p {
     font-size: 18px;
+  }
+
+  .chiller .details .side-info .more {
+    flex-direction: column;
+  }
+  .chiller .details .side-info .more .video {
+    margin-left: 0;
+    margin-top: 15px;
   }
 }
 
@@ -923,7 +936,7 @@ input[type="number"] {
 }
 .ar .chiller .details .side-info .more .video {
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 30px;
 }
 .ar .chiller .details .side-info .more .video img {
   margin-left: 0;
@@ -938,5 +951,10 @@ input[type="number"] {
   }
   .ar .chiller .details .side-info .more {
     align-items: baseline;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ar .chiller .details .side-info .more .video {
+    margin-right: 15px;
   }
 }

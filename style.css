@@ -874,6 +874,9 @@ input[type="number"] {
   align-items: center;
   margin-top: 20px;
 }
+.thank-you .thank-content .social .icons a {
+  margin: 0 10px;
+}
 .thank-you .thank-content .social .icons a img {
   width: 40px;
   height: 40px;
@@ -892,6 +895,16 @@ input[type="number"] {
 @media screen and (max-width: 480px) {
   .thank-you .thank-content h1 {
     font-size: 45px;
+  }
+  .thank-you .thank-content .img {
+    width: 140px;
+  }
+  .thank-you .thank-content p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .thank-you .thank-content .social h3 {
+    font-size: 18px;
   }
 }
 /* ========================================
@@ -915,9 +928,6 @@ input[type="number"] {
 .ar .chiller .details .side-info .more .video img {
   margin-left: 0;
   margin-right: 10px;
-}
-.ar .thank-you .thank-content .social h3 {
-  padding: 0 37px;
 }
 @media screen and (max-width: 767px) {
   .ar .chiller .details .side-info .info h1 {

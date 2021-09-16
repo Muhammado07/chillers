@@ -924,13 +924,16 @@ input[type="number"] {
   .thank-you .thank-content h1 {
     font-size: 36px;
   }
+  .thank-you .thank-content p {
+    padding: 10px 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .chiller .details .side-info .info h1 {
     font-size: 36px;
   }
   .chiller .details .side-info .info p {
-    font-size: 22px;
+    font-size: 14px;
   }
   .chiller .req {
     padding: 15px 20px;

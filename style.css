@@ -856,7 +856,7 @@ input[type="number"] {
 .thank-you .thank-content p {
   font-size: 18px;
   color: var(--second-color);
-  margin: 15px 0 40px;
+  margin: 15px 0 0;
 }
 .thank-you .thank-content .back-home.mob {
   display: none;
@@ -867,6 +867,7 @@ input[type="number"] {
   background-size: cover;
   object-fit: cover;
   border-radius: 10px;
+  margin-top: 20px;
 }
 .thank-you .thank-content .back-home:hover {
   opacity: 0.9;
@@ -922,11 +923,13 @@ input[type="number"] {
   .thank-you .thank-content h1 {
     font-size: 36px;
   }
+  .thank-you .thank-content p {
+    padding: 10px 0 10px 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .thank-you .thank-content p {
-    font-size: 16px;
-    padding: 0 10px;
+    font-size: 14px;
   }
   .thank-you .thank-content .social h3 {
     font-size: 18px;

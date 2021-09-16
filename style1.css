@@ -921,6 +921,9 @@ input[type="number"] {
   .req {
     font-size: 16px;
   }
+  .thank-you .thank-content h1 {
+    font-size: 36px;
+  }
 }
 @media screen and (max-width: 480px) {
   .chiller .details .side-info .info h1 {

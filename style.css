@@ -858,18 +858,12 @@ input[type="number"] {
   color: var(--second-color);
   margin: 15px 0 40px;
 }
-.thank-you .thank-content .back-home {
-  background: var(--first-color);
-  color: var(--third-color);
-  font-weight: 500;
-  font-size: 16px;
-  border: none;
-  border-color: transparent;
-  outline: none;
-  padding: 16px 20px;
-  width: 150px;
-  transition: 0.3s;
-  cursor: pointer;
+.thank-you .thank-content .back-home img {
+  width: 800px;
+  height: auto;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .thank-you .thank-content .back-home:hover {
   opacity: 0.9;
@@ -903,6 +897,11 @@ input[type="number"] {
   }
   .thank-you .thank-content p {
     font-size: 18px;
+  }
+  .thank-you .thank-content .back-home img {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 480px) {
